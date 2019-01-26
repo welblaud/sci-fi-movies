@@ -3,22 +3,50 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&amp;subset=latin-ext" rel="stylesheet">
   </head>
   <body>
     <div class="container">
       <header>
-        <img class="robot" src="https://www.iconexperience.com/_img/g_collection_png/standard/512x512/robot.png" width="80px;" height="auto;"/>
-        <div class="main">
+        <div class="robot">
+          <img src="https://www.iconexperience.com/_img/g_collection_png/standard/512x512/robot.png"/>
+        </div>
+        <div class="main-title">
           <h1>Sci-fi Movies</h1>
         </div>
+        <div id="search">
+          <input type="text" value="neconeco"></input>
+        </div>
       </header>
-      <div class="box one">
-      </div>
-      <div class="box two">
-        <h1><%= title %></h1>
-        <p>Abychom si vzpomněli: <%= title %></p>
-      </div>
-      <div class="box two">
+      <div class="items">
+        <div class="box">
+          <h3>Příchozí (Arrival) <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></h3>
+          <p>Ty s těma chapadlama!</p>
+        </div>
+        <div class="box">
+          <h3>Ready Player One <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></h3>
+          <p>No všechno dohromady!</p>
+        </div>
+        <div class="box">
+          <h3>Marťan <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></h3>
+          <p>Ten statečnej</p>
+        </div>
+        <div class="box">
+          <h3>Marťan <span class="stars">&#9733;&#9733;</span></h3>
+          <p>Ten statečnej</p>
+        </div>
+        <div class="box">
+          <h3>Marťan</h3>
+          <p>Ten statečnej</p>
+        </div>
+        <div class="box">
+          <h3>Marťan</h3>
+          <p>Ten statečnej</p>
+        </div>
+        <div class="box">
+          <h3>Marťan</h3>
+          <p>Ten statečnej</p>
+        </div>
       </div>
     </div>
   </body>
