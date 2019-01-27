@@ -15,9 +15,8 @@ header {
   position: fixed;
   top: 0;
   padding-top: 20px;
-  padding-bottom: 10px;
   width: 100%;
-  grid-template: 100% / 2fr 8fr 2fr;
+  grid-template: 2fr 1fr / 2fr 8fr 2fr;
   box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, .2);
   z-index: 1;
   background-color: white;
@@ -25,27 +24,28 @@ header {
 
 .items {
   grid-area: 2 / 3 / 4 / 4;
-  padding-top: 30px;
+  padding-top: 55px;
 }
 .box {
   border: solid 1px grey;
-  margin-top: 10px;
+  margin: 10px auto 0 auto;
   max-width: 500px;
   min-width: 250px;
   padding: 10px;
   box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, .2);
   
 }
-.robot {
-  grid-area: 1 / 2 / 2 / 3;
-}
-.robot img {
-  width: 80px;
-  height: auto;
-}
 .main-title {
   grid-area: 1 / 2 / 2 / 3;
   text-align: center;
+}
+.main-title h1 {
+  display: inline-block;
+}
+.main-title img {
+  display: inline-block;
+  width: 80px;
+  height: auto;
 }
 
 a {
@@ -57,8 +57,10 @@ a {
   line-height: 0.8;
 }
 #search {
-  grid-area: 2 / 3 / 4 / 4;
+  grid-area: 2 / 2 / 3 / 3;
+  text-align: center;
 }
 #search input {
-  width: 200px;
+  width: 40%;
+  max-width: 50%;
 }
