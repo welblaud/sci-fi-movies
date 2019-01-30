@@ -62,11 +62,11 @@ a {
   line-height: 0.8;
   text-shadow: 1px 1px 1px black;
 }
-#search {
+.searchBox {
   grid-area: 2 / 2 / 3 / 3;
   text-align: center;
 }
-#search input {
+#searchInput {
   animation: pulse 2s infinite;
   border: solid 2px rgb(140, 255, 140);
   color: #789;

@@ -2,8 +2,9 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css'>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <script src="/javascripts/controls.js"></script>
   </head>
   <body>
     <div class="container">
@@ -12,8 +13,8 @@
           <img src="/images/gopher-with-telescope.png"/>
           <h1>Sci-fi Movies</h1>
         </div>
-        <div id="search">
-          <input type="text" value="Hledej!">
+        <div class="searchBox">
+          <input id="searchInput" type="text" autocomplete="off" value="Hledej!">
         </div>
       </header>
       <div class="items">
