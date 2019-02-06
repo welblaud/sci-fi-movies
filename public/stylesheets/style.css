@@ -46,6 +46,7 @@ header {
 }
 .main-title h1 {
   display: inline-block;
+  font-family: 'Press Start 2P', cursive;
 }
 .main-title img {
   display: inline-block;
@@ -73,6 +74,31 @@ a {
   font-family: inherit;
   max-width: 50%;
   width: 40%;
+}
+.add {
+  background-color: rgb(140, 255, 140);
+  border-radius: 2px;
+  border: solid 1px rgb(140, 255, 140);
+  font-size: 1.3em;
+  margin-left: 5px;
+  line-height: 1em;
+}
+.addtip {
+  background-color: rgba(0, 0, 255, .2);
+  border-radius: 2px;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.5em;
+  padding: 2px 3px;
+  position: absolute;
+  margin-left: 6px;
+  margin-top: 4px;
+  text-align: center;
+  visibility: hidden;
+  z-index: 1;
+}
+.add:hover .addtip {
+  visibility: visible;
 }
 @-webkit-keyframes pulse {
   0% {
