@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <title><%= title %></title>
+    <!-- <script src="/javascripts/add-a-movie.js"></script> -->
+  </head>
+  <body>
+    <form action="/add-a-movie" method="POST">
+      <label for="nazev">Název:
+        <input id="nazev" name="nazev" type="text">
+      </label>
+      <br>
+      <label for="poster">Plakát:
+        <input id="poster" name="poster" type="url">
+      </label>
+      <br>
+      <label for="description">Popis:
+        <textarea cols="30" rows="30" id="description"></textarea>
+      </label>
+      <br>
+      <button type="submit">Přidat</button>
+    </form>
+  </body>
+</html>
