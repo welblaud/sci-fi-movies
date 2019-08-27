@@ -6,16 +6,16 @@ router.get('/', function(req, res, next) {
   res.render('add-a-movie', { title: 'Přidat film' });
 });
 
-/* GET add movie page. */
+/* POST add movie page. */
 router.post('/', function(req, res, next) {
 
   let sqlite3 = require( 'sqlite3').verbose();
-
+/*
   const nazev = req.body.nazev;
   const poster = req.body.poster;
   const description = req.body.description;
-
-  let db = new sqlite3.Database( './movies_db.db', (err) => {
+*/
+  let db = new sqlite3.Database( '../movies_db.db', (err) => {
     if ( err ) {
       return console.error( err.message );
     }
